@@ -2,18 +2,20 @@
 //*Template by pulgamecanica*//
 //***************************//
 
-#include "Dog.hpp"
+#include "Cat.hpp"
 #include "Brain.hpp"
 
-Dog::Dog() {
-	type_ = "Dog";
-	sound_ = "Woof!";
+Cat::Cat()
+{
+	type_ = "Cat";
+	sound_ = "Meoh!";
 	brain_ = new Brain();
-	std::cout << "Default constructor for Dog called" << std::endl;
+	std::cout << "Default constructor for Cat called" << std::endl;
 }
 
-Dog::Dog(const Dog& param): Animal(){
-	Brain	*copy = new Brain();
+Cat::Cat(const Cat &param) : Animal()
+{
+	Brain *copy = new Brain();
 
 	type_ = param.type_;
 	sound_ = param.sound_;
@@ -24,13 +26,15 @@ Dog::Dog(const Dog& param): Animal(){
 	brain_ = copy;
 }
 
-Dog::~Dog() {
+Cat::~Cat()
+{
 	delete brain_;
-	std::cout << "Dog" << " destroyed" << std::endl;
+	std::cout << "Cat" << " destroyed" << std::endl;
 }
 
-Dog& Dog::operator= (const Dog& param) {
-	Brain	*copy = new Brain();
+Cat &Cat::operator=(const Cat &param)
+{
+	Brain *copy = new Brain();
 
 	type_ = param.type_;
 	sound_ = param.sound_;
@@ -42,9 +46,13 @@ Dog& Dog::operator= (const Dog& param) {
 	return (*this);
 }
 
-std::ostream& operator<<(std::ostream& s, const Dog& param) {
+std::ostream &operator<<(std::ostream &s, const Cat &param)
+{
 	// s << param.CONST_METHOD()
 	(void)param;
 	return (s);
 }
 
+void Cat::makeSound(void) const {
+	std::cout << this->sound_ << std::endl;
+}

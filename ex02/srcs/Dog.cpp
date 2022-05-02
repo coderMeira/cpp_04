@@ -48,3 +48,6 @@ std::ostream& operator<<(std::ostream& s, const Dog& param) {
 	return (s);
 }
 
+void Dog::makeSound(void) const {
+	std::cout << this->sound_ << std::endl;
+}

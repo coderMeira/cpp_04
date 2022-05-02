@@ -13,8 +13,8 @@ class Animal {
 		Animal(const Animal&);
 		virtual ~Animal();
 		Animal&	operator= (const Animal&); // const for safety... not super nesessary
-		std::string	getType(void) const ;
-		void		makeSound(void) const ;
+		std::string		getType(void) const;
+		virtual void	makeSound(void) const = 0;
 
 	protected:
 		std::string	type_;

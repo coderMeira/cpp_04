@@ -33,7 +33,3 @@ std::ostream& operator<<(std::ostream& s, const Animal& param) {
 std::string	Animal::getType(void) const {
 	return (this->type_);
 }
-
-void	Animal::makeSound(void) const {
-	std::cout << this->sound_ << std::endl;
-}

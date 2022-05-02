@@ -15,6 +15,7 @@ class Dog : public Animal {
 		Dog(const Dog&);
 		~Dog();
 		Dog&	operator= (const Dog&); // const for safety... not super nesessary
+		virtual void	makeSound(void) const;
 	private:
 		Brain*	brain_;
 };
