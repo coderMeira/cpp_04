@@ -10,7 +10,7 @@ Dog::Dog() {
 	std::cout << "Default constructor for Dog called" << std::endl;
 }
 
-Dog::Dog(const Dog& param) {
+Dog::Dog(const Dog& param): Animal() {
 	// TODO (copy constructor)
 	(void)param;
 }

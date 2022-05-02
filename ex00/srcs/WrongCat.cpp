@@ -10,9 +10,9 @@ WrongCat::WrongCat() {
 	std::cout << "Default constructor for WrongCat called" << std::endl;
 }
 
-WrongCat::WrongCat(const WrongCat& param) {
-	// TODO (copy constructor)
-	(void)param;
+WrongCat::WrongCat(const WrongCat& param): WrongAnimal() {
+	type_ = param.type_;
+	sound_ = param.sound_;
 }
 
 WrongCat::~WrongCat() {

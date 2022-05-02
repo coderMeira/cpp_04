@@ -10,7 +10,7 @@ Cat::Cat() {
 	std::cout << "Default constructor for Cat called" << std::endl;
 }
 
-Cat::Cat(const Cat& param) {
+Cat::Cat(const Cat& param): Animal() {
 	// TODO (copy constructor)
 	(void)param;
 }

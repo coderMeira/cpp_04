@@ -2,7 +2,10 @@
 //*Template by pulgamecanica*//
 //***************************//
 
-#include "ex01.hpp"
+#include <iostream>
+#include "Animal.hpp"
+#include "Dog.hpp"
+#include "Cat.hpp"
 
 int main() {
 	const Animal*	animals[10];
@@ -25,10 +28,22 @@ int main() {
 
 	delete gato;
 	delete cao;
+
 	std::cout << std::endl;
 
 	{
 		Dog basic;
 		Dog copy(basic);
+	}
+
+	std::cout << std::endl;
+
+	{
+		//Animal	animal;
+		Cat			gato;
+		Dog			cao;
+
+		gato.makeSound();
+		cao.makeSound();
 	}
 }

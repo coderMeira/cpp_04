@@ -2,8 +2,8 @@
 //*Template by pulgamecanica*//
 //***************************//
 
-#ifndef __EX01_HPP__
-# define __EX01_HPP__
+#ifndef __EX02_HPP__
+# define __EX02_HPP__
 
 #include <iostream>
 #include "Animal.hpp"
