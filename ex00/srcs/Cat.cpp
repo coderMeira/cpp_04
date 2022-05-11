@@ -6,7 +6,6 @@
 
 Cat::Cat() {
 	type_ = "Cat";
-	sound_ = "Meoh!";
 	std::cout << "Default constructor for Cat called" << std::endl;
 }
 
@@ -33,3 +32,7 @@ std::ostream& operator<<(std::ostream& s, const Cat& param) {
 	return (s);
 }
 
+void	Cat::makeSound(void) const
+{
+	std::cout << "Meoh!" << std::endl;
+}

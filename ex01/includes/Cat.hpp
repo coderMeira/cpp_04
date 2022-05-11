@@ -13,8 +13,9 @@ class Cat : public Animal {
 	public:
 		Cat();
 		Cat(const Cat&);
-		~Cat();
+		virtual ~Cat();
 		Cat&	operator= (const Cat&); // const for safety... not super nesessary
+		void	makeSound(void) const ;
 
 	private:
 		Brain*	brain_;

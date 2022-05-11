@@ -14,6 +14,8 @@ class WrongCat : public WrongAnimal {
 		WrongCat(const WrongCat&);
 		~WrongCat();
 		WrongCat&	operator= (const WrongCat&); // const for safety... not super nesessary
+
+		void	makeSound(void) const ;
 };
 
 std::ostream&	operator<<(std::ostream&, const WrongCat&);

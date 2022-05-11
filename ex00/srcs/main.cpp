@@ -15,6 +15,8 @@ int	main(void)
 	std::cout << YELLOW << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n" << ENDC;
 	const WrongAnimal	*mosquito = new WrongAnimal();
 	std::cout << YELLOW << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n" << ENDC;
+	const WrongAnimal	*merdaqqr = new WrongCat();
+	std::cout << YELLOW << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n" << ENDC;
 	const WrongCat		*tigre = new WrongCat();
 
 	std::cout << YELLOW << "\n****************************************************\n" << ENDC;
@@ -24,6 +26,7 @@ int	main(void)
 	std::cout << cao->getType() << " " << std::endl;
 	std::cout << gato->getType() << " " << std::endl;
 	std::cout << mosquito->getType() << " " << std::endl;
+	std::cout << merdaqqr->getType() << " " << std::endl;
 	std::cout << tigre->getType() << " " << std::endl;
 
 	std::cout << YELLOW << "\n****************************************************\n" << ENDC;
@@ -33,6 +36,7 @@ int	main(void)
 	gato->makeSound(); //will output the cat sound!
 	cao->makeSound();
 	mosquito->makeSound();
+	merdaqqr->makeSound();
 	tigre->makeSound();
 
 	std::cout << YELLOW << "\n****************************************************\n" << ENDC;

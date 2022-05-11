@@ -5,14 +5,12 @@
 #include "WrongCat.hpp"
 
 WrongCat::WrongCat() {
-	type_ = "Wrong cat! ABORT!";
-	sound_ = "Mew 👽";
+	type_ = "Wrong cat";
 	std::cout << "Default constructor for WrongCat called" << std::endl;
 }
 
 WrongCat::WrongCat(const WrongCat& param): WrongAnimal() {
 	type_ = param.type_;
-	sound_ = param.sound_;
 }
 
 WrongCat::~WrongCat() {
@@ -33,3 +31,7 @@ std::ostream& operator<<(std::ostream& s, const WrongCat& param) {
 	return (s);
 }
 
+void	WrongCat::makeSound(void) const
+{
+	std::cout << "Wrong Meoh!" << std::endl;
+}

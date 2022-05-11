@@ -18,7 +18,6 @@ class WrongAnimal {
 
 	protected:
 		std::string	type_;
-		std::string	sound_;
 };
 
 std::ostream&	operator<<(std::ostream&, const WrongAnimal&);
