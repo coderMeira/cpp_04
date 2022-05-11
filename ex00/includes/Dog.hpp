@@ -14,6 +14,7 @@ class Dog : public Animal {
 		Dog(const Dog&);
 		~Dog();
 		Dog&	operator= (const Dog&); // const for safety... not super nesessary
+		void	makeSound(void) const ;
 };
 
 std::ostream&	operator<<(std::ostream&, const Dog&);

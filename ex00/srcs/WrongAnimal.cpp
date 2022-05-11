@@ -5,13 +5,11 @@
 #include "WrongAnimal.hpp"
 
 WrongAnimal::WrongAnimal() {
-	type_ = "Take that thing out of there, that's the wrong animal!";
-	sound_ = "An animal animal noise that sounds...wrong";
+	type_ = "Wrong animal type";
 	std::cout << "Default constructor for WrongAnimal called" << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal& param) {
-	sound_ = param.sound_;
 	type_ = param.type_;
 }
 
@@ -38,6 +36,6 @@ std::string	WrongAnimal::getType(void) const {
 }
 
 void	WrongAnimal::makeSound(void) const {
-	std::cout << this->sound_ << std::endl;
+	std::cout << "An animal animal noise that sounds...wrong" << std::endl;
 }
 

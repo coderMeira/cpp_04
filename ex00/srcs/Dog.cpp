@@ -6,7 +6,6 @@
 
 Dog::Dog() {
 	type_ = "Dog";
-	sound_ = "Woof!";
 	std::cout << "Default constructor for Dog called" << std::endl;
 }
 
@@ -33,3 +32,7 @@ std::ostream& operator<<(std::ostream& s, const Dog& param) {
 	return (s);
 }
 
+void	Dog::makeSound(void) const
+{
+	std::cout << "Woof!" << std::endl;
+}

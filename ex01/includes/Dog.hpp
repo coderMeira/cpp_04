@@ -13,8 +13,10 @@ class Dog : public Animal {
 	public:
 		Dog();
 		Dog(const Dog&);
-		~Dog();
+		virtual ~Dog();
 		Dog&	operator= (const Dog&); // const for safety... not super nesessary
+		void	makeSound(void) const ;
+
 	private:
 		Brain*	brain_;
 };

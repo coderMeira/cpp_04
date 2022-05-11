@@ -8,7 +8,6 @@
 Cat::Cat()
 {
 	type_ = "Cat";
-	sound_ = "Meoh!";
 	brain_ = new Brain();
 	std::cout << "Default constructor for Cat called" << std::endl;
 }
@@ -18,7 +17,6 @@ Cat::Cat(const Cat &param) : Animal()
 	Brain *copy = new Brain();
 
 	type_ = param.type_;
-	sound_ = param.sound_;
 	for (int i = 0; i < 100; i++)
 	{
 		copy->ideas_[i] = param.brain_->ideas_[i];
@@ -37,7 +35,6 @@ Cat &Cat::operator=(const Cat &param)
 	Brain *copy = new Brain();
 
 	type_ = param.type_;
-	sound_ = param.sound_;
 	for (int i = 0; i < 100; i++)
 	{
 		copy->ideas_[i] = param.brain_->ideas_[i];
@@ -53,6 +50,7 @@ std::ostream &operator<<(std::ostream &s, const Cat &param)
 	return (s);
 }
 
-void Cat::makeSound(void) const {
-	std::cout << this->sound_ << std::endl;
+void	Cat::makeSound(void) const
+{
+	std::cout << "Meoh!" << std::endl;
 }

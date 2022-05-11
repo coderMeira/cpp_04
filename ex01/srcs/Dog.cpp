@@ -7,7 +7,6 @@
 
 Dog::Dog() {
 	type_ = "Dog";
-	sound_ = "Woof!";
 	brain_ = new Brain();
 	std::cout << "Default constructor for Dog called" << std::endl;
 }
@@ -16,7 +15,6 @@ Dog::Dog(const Dog& param): Animal(){
 	Brain	*copy = new Brain();
 
 	type_ = param.type_;
-	sound_ = param.sound_;
 	for (int i = 0; i < 100; i++)
 	{
 		copy->ideas_[i] = param.brain_->ideas_[i];
@@ -33,7 +31,6 @@ Dog& Dog::operator= (const Dog& param) {
 	Brain	*copy = new Brain();
 
 	type_ = param.type_;
-	sound_ = param.sound_;
 	for (int i = 0; i < 100; i++)
 	{
 		copy->ideas_[i] = param.brain_->ideas_[i];
@@ -48,3 +45,7 @@ std::ostream& operator<<(std::ostream& s, const Dog& param) {
 	return (s);
 }
 
+void	Dog::makeSound(void) const
+{
+	std::cout << "Woof!" << std::endl;
+}

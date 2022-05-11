@@ -6,13 +6,10 @@
 
 Animal::Animal() {
 	type_ = "Just an animal";
-	sound_ = "Standard animal noise";
-
 	std::cout << "Default constructor for Animal called" << std::endl;
 }
 
 Animal::Animal(const Animal& param) {
-	sound_ = param.sound_;
 	type_ = param.type_;
 }
 
@@ -36,5 +33,5 @@ std::string	Animal::getType(void) const {
 }
 
 void	Animal::makeSound(void) const {
-	std::cout << this->sound_ << std::endl;
+	std::cout << "Standard animal noise" << std::endl;
 }
